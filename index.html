@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!--CSS LINK-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--GOOGLE FONT LINKS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+      <form action="" method="" class="orderprice">
+        <p>Bill</p>
+        <input type="text" placeholder="0" class="totalbill">
+        <span class="d-sign"><i class="fa-solid fa-dollar-sign"></i></span>
+        <p>Select Tip %</p>
+        <div class="tip-container">
+          <div class="f-set">
+            <button class="tipperc" type="button"><span class="val">5</span>%</button>
+            <button class="tipperc" type="button"><span class="val">10</span>%</button>
+            <button class="tipperc" type="button"><span class="val">15</span>%</button>
+          </div>
+          <div class="p-set">
+            <button class="tipperc" type="button"><span class="val">25</span>%</button>
+            <button class="tipperc" type="button"><span class="val">50</span>%</button>
+            <button class="tipperc" class="custom" type="button">Custom</button>
+          </div>
+        </div>
+        <p>Number of People</p>
+        <input type="text" placeholder="0" class="noofpeople">
+        <span class="u-sign"><i class="fa-solid fa-user"></i></span>
+      </form>
+      <form action="" method="">
+        <div>
+          <div class="tipstuff">
+            <p class="tipper">
+              <span class="whitey">Tip Amount</span>
+              <span class="grey">/ person</span>
+            </p>
+            <p class="amount">$<span id="tipAmountPerPerson">0.00</span></p>
+          </div>
+          <div class="totalstuff">
+            <p class="totalper">
+              <span class="whitey">Total</span>
+              <span class="grey">/ person</span>
+            </p>
+            <p class="amount">$<span id="totalBillPerPerson">0.00</span></p>
+          </div>
+        </div>
+        <button type="reset" class="reset">Reset</button>
+      </form>
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/9e37084d9f.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Space Mono", monospace;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 20px;
+    position: relative;
+    gap: 1rem;
+}
+
+form:nth-child(1){
+    background-color: hsl(0, 0%, 100%);
+}
+
+form:nth-child(2){
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+input{
+    text-align: right;
+    padding: 0.5rem 1rem;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 0.5rem 0 1rem;
+    font-family: "Space Mono", monospace;
+}
+
+input:focus{
+    outline: none;
+}
+
+.d-sign,
+.u-sign{
+    position: absolute;
+    right: 615px;
+    padding: 1.2rem 0;
+    color: hsl(184, 14%, 56%);
+}
+
+.orderprice button{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 5px;
+    font-family: "Space Mono", monospace;
+}
+
+.p-set button:last-child{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+}
+
+.tip-container{
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 0.5rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.f-set,
+.p-set{
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 0.5rem;
+}
+
+.tipstuff,
+.totalstuff{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.tipstuff{
+    padding: 0 0 3rem;
+}
+
+.tipper,
+.totalper{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.amount{
+    font-size: 2rem;
+    color: hsl(172, 67%, 45%);
+}
+
+.reset{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(172, 65%, 30%);
+    background-color: hsl(183, 68%, 22%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.reset:active{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.whitey{
+    color: hsl(0, 0%, 100%);
+}
+
+.grey{
+    color: hsl(185, 41%, 84%);
+}
+
+@media (min-width:360px){
+    body{
+        height: 120vh;
+    }
+
+    .container{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .d-sign,
+    .u-sign{
+        right: 300px;
+    }
+}
+
+@media (min-width:768px){
+    body{
+        height: 100vh;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .d-sign,
+    .u-sign{
+        right: 615px;
+    }
+}
